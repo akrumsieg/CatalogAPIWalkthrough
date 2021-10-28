@@ -10,11 +10,11 @@ namespace CatalogAPIWalkthrough.Controllers
     [Route("[controller]")] // OR [Route("items")]
     public class ItemsController : ControllerBase
     {
-        private readonly InMemItemsRepository repository;
+        private readonly IItemsRepository repository;
 
-        public ItemsController()
+        public ItemsController(IItemsRepository repository)
         {
-            repository = new InMemItemsRepository();
+            this.repository = repository;
         }
 
         //GET /items

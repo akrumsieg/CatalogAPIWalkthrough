@@ -5,7 +5,7 @@ using CatalogAPIWalkthrough.Entities;
 
 namespace CatalogAPIWalkthrough.Repositories
 {
-    public class InMemItemsRepository
+        public class InMemItemsRepository : IItemsRepository
     {
         private readonly List<Item> items = new() //target typed new expression
         {
@@ -37,7 +37,8 @@ namespace CatalogAPIWalkthrough.Repositories
             return items;
         }
 
-        public Item GetItem(Guid id) {
+        public Item GetItem(Guid id)
+        {
             return items.Where(item => item.Id == id).SingleOrDefault();
         }
     }
