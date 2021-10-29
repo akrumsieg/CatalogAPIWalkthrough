@@ -27,7 +27,7 @@ namespace CatalogAPIWalkthrough.Controllers
             return items;
         }
 
-        //GET /items/id
+        //GET /items/{id}
         [HttpGet]
         [Route("{id}")]
         public ActionResult<ItemDTO> GetItem(Guid id)
@@ -52,7 +52,7 @@ namespace CatalogAPIWalkthrough.Controllers
             return CreatedAtAction(nameof(GetItem), new { id = item.Id }, item.AsDTO());
         }
 
-        //PUT /items
+        //PUT /items/{id}
         [HttpPut("{id}")]
         public ActionResult UpdateItem(Guid id, UpdateItemDTO dto) {
             var existingItem = repository.GetItem(id);
@@ -64,6 +64,16 @@ namespace CatalogAPIWalkthrough.Controllers
             };
 
             repository.UpdateItem(updatedItem);
+
+            return NoContent();
+        }
+
+        //DELETE /items/{id}
+        [HttpDelete("{id}")]
+        public ActionResult DeleteItem(Guid id) {
+            if (repository.GetItem(id) == null) return NotFound();
+
+            repository.DeleteItem(id);
 
             return NoContent();
         }
