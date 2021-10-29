@@ -36,5 +36,20 @@ namespace CatalogAPIWalkthrough.Controllers
             if (item is null) return NotFound();
             return item.AsDTO();
         }
+
+        //POST /items
+        [HttpPost]
+        public ActionResult<ItemDTO> CreateItem(CreateItemDTO dto) {
+            Item item = new() {
+                Id = Guid.NewGuid(),
+                Name = dto.Name,
+                Price = dto.Price,
+                CreatedDate = DateTimeOffset.UtcNow
+            };
+
+            repository.CreateItem(item);
+
+            return CreatedAtAction(nameof(GetItem), new { id = item.Id }, item.AsDTO());
+        }
     }
 }
