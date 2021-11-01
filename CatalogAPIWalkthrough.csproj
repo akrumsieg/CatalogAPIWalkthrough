@@ -6,6 +6,7 @@
 
 <!-- different from walkthrough -->
   <ItemGroup>
+    <PackageReference Include="MongoDB.Driver" Version="2.13.2" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
   </ItemGroup>
 

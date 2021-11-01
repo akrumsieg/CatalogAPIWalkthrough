@@ -26,3 +26,15 @@ C:\Code\DemoProjects\CatalogAPIWalkthrough\obj\Debug\net5.0\CatalogAPIWalkthroug
 C:\Code\DemoProjects\CatalogAPIWalkthrough\obj\Debug\net5.0\ref\CatalogAPIWalkthrough.dll
 C:\Code\DemoProjects\CatalogAPIWalkthrough\obj\Debug\net5.0\CatalogAPIWalkthrough.pdb
 C:\Code\DemoProjects\CatalogAPIWalkthrough\obj\Debug\net5.0\CatalogAPIWalkthrough.genruntimeconfig.cache
+C:\Code\DemoProjects\CatalogAPIWalkthrough\bin\Debug\net5.0\DnsClient.dll
+C:\Code\DemoProjects\CatalogAPIWalkthrough\bin\Debug\net5.0\MongoDB.Bson.dll
+C:\Code\DemoProjects\CatalogAPIWalkthrough\bin\Debug\net5.0\MongoDB.Driver.dll
+C:\Code\DemoProjects\CatalogAPIWalkthrough\bin\Debug\net5.0\MongoDB.Driver.Core.dll
+C:\Code\DemoProjects\CatalogAPIWalkthrough\bin\Debug\net5.0\MongoDB.Libmongocrypt.dll
+C:\Code\DemoProjects\CatalogAPIWalkthrough\bin\Debug\net5.0\SharpCompress.dll
+C:\Code\DemoProjects\CatalogAPIWalkthrough\bin\Debug\net5.0\runtimes\win\native\libzstd.dll
+C:\Code\DemoProjects\CatalogAPIWalkthrough\bin\Debug\net5.0\runtimes\win\native\snappy32.dll
+C:\Code\DemoProjects\CatalogAPIWalkthrough\bin\Debug\net5.0\runtimes\win\native\snappy64.dll
+C:\Code\DemoProjects\CatalogAPIWalkthrough\bin\Debug\net5.0\runtimes\linux\native\libmongocrypt.so
+C:\Code\DemoProjects\CatalogAPIWalkthrough\bin\Debug\net5.0\runtimes\osx\native\libmongocrypt.dylib
+C:\Code\DemoProjects\CatalogAPIWalkthrough\bin\Debug\net5.0\runtimes\win\native\mongocrypt.dll
