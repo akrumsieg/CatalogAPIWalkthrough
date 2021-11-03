@@ -45,7 +45,10 @@ namespace CatalogAPIWalkthrough
 
             services.AddSingleton<IItemsRepository, MongoDbItemsRepository>();
 
-            services.AddControllers();
+            services.AddControllers(options =>
+            {
+                options.SuppressAsyncSuffixInActionNames = false;
+            });
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "CatalogAPIWalkthrough", Version = "v1" });
