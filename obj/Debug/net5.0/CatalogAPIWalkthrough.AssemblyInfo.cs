@@ -11,6 +11,7 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("db96e6db-6823-43f7-b7af-c36b69e446f3")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("CatalogAPIWalkthrough")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
