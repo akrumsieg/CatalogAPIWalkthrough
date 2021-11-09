@@ -60,10 +60,10 @@ namespace CatalogAPIWalkthrough
 
             services.AddHealthChecks() //many other open source health checks available
                 .AddMongoDb(
-                    mongoDbSettings.ConnectionString, 
-                    name: "mongodb", 
+                    mongoDbSettings.ConnectionString,
+                    name: "mongodb",
                     timeout: TimeSpan.FromSeconds(3),
-                    tags: new[] {"ready"});
+                    tags: new[] { "ready" });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -77,7 +77,10 @@ namespace CatalogAPIWalkthrough
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "CatalogAPIWalkthrough v1"));
             }
 
-            app.UseHttpsRedirection();
+            if (env.IsDevelopment())
+            {
+                app.UseHttpsRedirection();
+            }
 
             app.UseRouting();
 
@@ -86,15 +89,18 @@ namespace CatalogAPIWalkthrough
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
-                
-                endpoints.MapHealthChecks("/health/ready", new HealthCheckOptions{
+
+                endpoints.MapHealthChecks("/health/ready", new HealthCheckOptions
+                {
                     Predicate = (check) => check.Tags.Contains("ready"), //check to see if API is ready to receive requests
-                    ResponseWriter = async(context, report) => //customize endpoint response JSON message
+                    ResponseWriter = async (context, report) => //customize endpoint response JSON message
                     {
                         var result = JsonSerializer.Serialize(
-                            new {
+                            new
+                            {
                                 status = report.Status.ToString(),
-                                checks = report.Entries.Select(entry => new {
+                                checks = report.Entries.Select(entry => new
+                                {
                                     name = entry.Key,
                                     status = entry.Value.Status.ToString(),
                                     exception = entry.Value.Exception != null ? entry.Value.Exception.Message : "none",
@@ -109,7 +115,8 @@ namespace CatalogAPIWalkthrough
                     }
                 });
 
-                endpoints.MapHealthChecks("/health/live", new HealthCheckOptions{
+                endpoints.MapHealthChecks("/health/live", new HealthCheckOptions
+                {
                     Predicate = (_) => false //excluding all health checks; will just check to see that API service is live
                 });
             });
