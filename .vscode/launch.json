@@ -6,15 +6,15 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/bin/Debug/net5.0/CatalogAPIWalkthrough.dll",
+            "program": "${workspaceFolder}/CatalogAPIWalkthrough.API/bin/Debug/net5.0/CatalogAPIWalkthrough.API.dll",
             "args": [],
-            "cwd": "${workspaceFolder}",
+            "cwd": "${workspaceFolder}/CatalogAPIWalkthrough.API",
             "stopAtEntry": false,
             "env": {
                 "ASPNETCORE_ENVIRONMENT": "Development"
             },
             "sourceFileMap": {
-                "/Views": "${workspaceFolder}/Views"
+                "/Views": "${workspaceFolder}/CatalogAPIWalkthrough.API/Views"
             }
         },
         {
@@ -28,7 +28,7 @@
             "request": "launch",
             "preLaunchTask": "docker-run: debug",
             "netCore": {
-                "appProject": "${workspaceFolder}/CatalogAPIWalkthrough.csproj"
+                "appProject": "${workspaceFolder}/CatalogAPIWalkthrough.API/CatalogAPIWalkthrough.API.csproj"
             }
         }
     ]
