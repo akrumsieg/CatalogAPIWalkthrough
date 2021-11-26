@@ -25,10 +25,14 @@ namespace CatalogAPIWalkthrough.API.Controllers
 
         //GET /items
         [HttpGet]
-        public async Task<IEnumerable<ItemDTO>> GetItemsAsync()
+        public async Task<IEnumerable<ItemDTO>> GetItemsAsync(string name = null)
         {
             var items = (await repository.GetItemsAsync())
                         .Select(item => item.AsDTO()); //must group await with the get method, not with .Select
+
+            if (!string.IsNullOrWhiteSpace(name)) {
+                items = items.Where(item => item.Name.Contains(name, StringComparison.OrdinalIgnoreCase));
+            }
 
             logger.LogInformation($"{DateTime.UtcNow.ToString("hh:mm:ss")}: Retrieved {items.Count()} items");
                         
@@ -51,6 +55,7 @@ namespace CatalogAPIWalkthrough.API.Controllers
             Item item = new() {
                 Id = Guid.NewGuid(),
                 Name = dto.Name,
+                Description = dto.Description,
                 Price = dto.Price,
                 CreatedDate = DateTimeOffset.UtcNow
             };
@@ -66,12 +71,10 @@ namespace CatalogAPIWalkthrough.API.Controllers
             var existingItem = await repository.GetItemAsync(id);
             if (existingItem is null) return NotFound();
 
-            Item updatedItem = existingItem with {
-                Name = dto.Name,
-                Price = dto.Price
-            };
+            existingItem.Name = dto.Name;
+            existingItem.Price = dto.Price;
 
-            await repository.UpdateItemAsync(updatedItem);
+            await repository.UpdateItemAsync(existingItem);
 
             return NoContent();
         }
@@ -85,5 +88,6 @@ namespace CatalogAPIWalkthrough.API.Controllers
 
             return NoContent();
         }
+
     }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Code\\DemoProjects\\CatalogAPIWalkthrough\\CatalogAPIWalkthrough.API\\CatalogAPIWalkthrough.API.csproj": {}
+    "C:\\Code\\DemoProjects\\CatalogAPIWalkthrough\\CatalogAPIWalkthrough.API\\CatalogAPIWalkthrough.API.csproj": {}
   },
   "projects": {
-    "c:\\Code\\DemoProjects\\CatalogAPIWalkthrough\\CatalogAPIWalkthrough.API\\CatalogAPIWalkthrough.API.csproj": {
+    "C:\\Code\\DemoProjects\\CatalogAPIWalkthrough\\CatalogAPIWalkthrough.API\\CatalogAPIWalkthrough.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Code\\DemoProjects\\CatalogAPIWalkthrough\\CatalogAPIWalkthrough.API\\CatalogAPIWalkthrough.API.csproj",
+        "projectUniqueName": "C:\\Code\\DemoProjects\\CatalogAPIWalkthrough\\CatalogAPIWalkthrough.API\\CatalogAPIWalkthrough.API.csproj",
         "projectName": "CatalogAPIWalkthrough.API",
-        "projectPath": "c:\\Code\\DemoProjects\\CatalogAPIWalkthrough\\CatalogAPIWalkthrough.API\\CatalogAPIWalkthrough.API.csproj",
+        "projectPath": "C:\\Code\\DemoProjects\\CatalogAPIWalkthrough\\CatalogAPIWalkthrough.API\\CatalogAPIWalkthrough.API.csproj",
         "packagesPath": "C:\\Users\\akrum\\.nuget\\packages\\",
-        "outputPath": "c:\\Code\\DemoProjects\\CatalogAPIWalkthrough\\CatalogAPIWalkthrough.API\\obj\\",
+        "outputPath": "C:\\Code\\DemoProjects\\CatalogAPIWalkthrough\\CatalogAPIWalkthrough.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "phQIJJltq4yKkKhEcty5bPtZqKN41yxn6Xr2gnBWyzs9gkac9eeo7xjGw+NhXcN0xdDLCVzDyabmzm5PwP65cA==",
+  "dgSpecHash": "apA5bkBE4WcZzOipWtJQBWf7IpBes+ssTM81NW4OGq+zwUc5omDWLyeSwY3ktrqoUQN4C4Rx2vXAMahleOjADg==",
   "success": true,
-  "projectFilePath": "c:\\Code\\DemoProjects\\CatalogAPIWalkthrough\\CatalogAPIWalkthrough.UnitTests\\CatalogAPIWalkthrough.UnitTests.csproj",
+  "projectFilePath": "C:\\Code\\DemoProjects\\CatalogAPIWalkthrough\\CatalogAPIWalkthrough.UnitTests\\CatalogAPIWalkthrough.UnitTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\akrum\\.nuget\\packages\\aspnetcore.healthchecks.mongodb\\5.0.1\\aspnetcore.healthchecks.mongodb.5.0.1.nupkg.sha512",
     "C:\\Users\\akrum\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",

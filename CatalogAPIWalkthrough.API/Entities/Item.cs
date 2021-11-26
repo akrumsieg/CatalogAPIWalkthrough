@@ -2,11 +2,12 @@ using System;
 
 namespace CatalogAPIWalkthrough.API.Entities
 {
-    public record Item
+    public class Item
     {
-        public Guid Id { get; init; } //init is immutable after instantiation; kind of like private set but doesn't need constructor
-        public string Name { get; init; }
-        public decimal Price { get; init; }
-        public DateTimeOffset CreatedDate { get; init; } 
+        public Guid Id { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public decimal Price { get; set; }
+        public DateTimeOffset CreatedDate { get; set; } 
     }
 }
