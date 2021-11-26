@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Code\\DemoProjects\\CatalogAPIWalkthrough\\CatalogAPIWalkthrough.UnitTests\\CatalogAPIWalkthrough.UnitTests.csproj": {}
+    "c:\\Code\\DemoProjects\\CatalogAPIWalkthrough\\CatalogAPIWalkthrough.UnitTests\\CatalogAPIWalkthrough.UnitTests.csproj": {}
   },
   "projects": {
-    "C:\\Code\\DemoProjects\\CatalogAPIWalkthrough\\CatalogAPIWalkthrough.API\\CatalogAPIWalkthrough.API.csproj": {
+    "c:\\Code\\DemoProjects\\CatalogAPIWalkthrough\\CatalogAPIWalkthrough.API\\CatalogAPIWalkthrough.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Code\\DemoProjects\\CatalogAPIWalkthrough\\CatalogAPIWalkthrough.API\\CatalogAPIWalkthrough.API.csproj",
+        "projectUniqueName": "c:\\Code\\DemoProjects\\CatalogAPIWalkthrough\\CatalogAPIWalkthrough.API\\CatalogAPIWalkthrough.API.csproj",
         "projectName": "CatalogAPIWalkthrough.API",
-        "projectPath": "C:\\Code\\DemoProjects\\CatalogAPIWalkthrough\\CatalogAPIWalkthrough.API\\CatalogAPIWalkthrough.API.csproj",
+        "projectPath": "c:\\Code\\DemoProjects\\CatalogAPIWalkthrough\\CatalogAPIWalkthrough.API\\CatalogAPIWalkthrough.API.csproj",
         "packagesPath": "C:\\Users\\akrum\\.nuget\\packages\\",
-        "outputPath": "C:\\Code\\DemoProjects\\CatalogAPIWalkthrough\\CatalogAPIWalkthrough.API\\obj\\",
+        "outputPath": "c:\\Code\\DemoProjects\\CatalogAPIWalkthrough\\CatalogAPIWalkthrough.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -79,14 +79,14 @@
         }
       }
     },
-    "C:\\Code\\DemoProjects\\CatalogAPIWalkthrough\\CatalogAPIWalkthrough.UnitTests\\CatalogAPIWalkthrough.UnitTests.csproj": {
+    "c:\\Code\\DemoProjects\\CatalogAPIWalkthrough\\CatalogAPIWalkthrough.UnitTests\\CatalogAPIWalkthrough.UnitTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Code\\DemoProjects\\CatalogAPIWalkthrough\\CatalogAPIWalkthrough.UnitTests\\CatalogAPIWalkthrough.UnitTests.csproj",
+        "projectUniqueName": "c:\\Code\\DemoProjects\\CatalogAPIWalkthrough\\CatalogAPIWalkthrough.UnitTests\\CatalogAPIWalkthrough.UnitTests.csproj",
         "projectName": "CatalogAPIWalkthrough.UnitTests",
-        "projectPath": "C:\\Code\\DemoProjects\\CatalogAPIWalkthrough\\CatalogAPIWalkthrough.UnitTests\\CatalogAPIWalkthrough.UnitTests.csproj",
+        "projectPath": "c:\\Code\\DemoProjects\\CatalogAPIWalkthrough\\CatalogAPIWalkthrough.UnitTests\\CatalogAPIWalkthrough.UnitTests.csproj",
         "packagesPath": "C:\\Users\\akrum\\.nuget\\packages\\",
-        "outputPath": "C:\\Code\\DemoProjects\\CatalogAPIWalkthrough\\CatalogAPIWalkthrough.UnitTests\\obj\\",
+        "outputPath": "c:\\Code\\DemoProjects\\CatalogAPIWalkthrough\\CatalogAPIWalkthrough.UnitTests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -107,8 +107,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Code\\DemoProjects\\CatalogAPIWalkthrough\\CatalogAPIWalkthrough.API\\CatalogAPIWalkthrough.API.csproj": {
-                "projectPath": "C:\\Code\\DemoProjects\\CatalogAPIWalkthrough\\CatalogAPIWalkthrough.API\\CatalogAPIWalkthrough.API.csproj"
+              "c:\\Code\\DemoProjects\\CatalogAPIWalkthrough\\CatalogAPIWalkthrough.API\\CatalogAPIWalkthrough.API.csproj": {
+                "projectPath": "c:\\Code\\DemoProjects\\CatalogAPIWalkthrough\\CatalogAPIWalkthrough.API\\CatalogAPIWalkthrough.API.csproj"
               }
             }
           }
@@ -123,6 +123,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[6.2.0, )"
+            },
             "Microsoft.Extensions.Logging.Abstractions": {
               "target": "Package",
               "version": "[6.0.0, )"

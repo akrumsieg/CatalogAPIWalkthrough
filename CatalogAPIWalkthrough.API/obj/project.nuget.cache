@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MaqY83J3fva8e6tW2+cpClaL3vIa2fb1GrihfANboZFcGXlEaf1EhxkNjDANbwp/oeCQ/bC6P/yMLRBKR/bxhw==",
+  "dgSpecHash": "Q6JCZJoh8w+ja4FvJNQKi9/IgTDnGi5mWkwdn621Yc8GVcAh/UHoxBcAlG0FlcRcKQ4tMFvEU9BWrC9al3lzgw==",
   "success": true,
-  "projectFilePath": "C:\\Code\\DemoProjects\\CatalogAPIWalkthrough\\CatalogAPIWalkthrough.API\\CatalogAPIWalkthrough.API.csproj",
+  "projectFilePath": "c:\\Code\\DemoProjects\\CatalogAPIWalkthrough\\CatalogAPIWalkthrough.API\\CatalogAPIWalkthrough.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\akrum\\.nuget\\packages\\aspnetcore.healthchecks.mongodb\\5.0.1\\aspnetcore.healthchecks.mongodb.5.0.1.nupkg.sha512",
     "C:\\Users\\akrum\\.nuget\\packages\\dnsclient\\1.4.0\\dnsclient.1.4.0.nupkg.sha512",

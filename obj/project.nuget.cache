@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "l4rH6waJg4cCiGnI3RByB6Lt2tZ12QKmtlsp7LB/GPCbPyF/7okGNcAxUY/f6nI1+yBRLWXaRYsJEiE9kF2usQ==",
+  "dgSpecHash": "fiTsYHY4JRmAWhDnYzKR/rg/mv79cVqhm09+v52CZG7QkfYIFAFb+YT1JJtShIOKAqCzy6TZds756xVona1V4A==",
   "success": true,
   "projectFilePath": "C:\\Code\\DemoProjects\\CatalogAPIWalkthrough\\build.proj",
-  "expectedPackageFiles": [
-    "C:\\Users\\akrum\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }
