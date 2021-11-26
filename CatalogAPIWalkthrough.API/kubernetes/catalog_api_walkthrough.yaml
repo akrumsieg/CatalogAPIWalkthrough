@@ -1,0 +1,51 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: catalog-api-walkthrough-deployment
+spec:
+  selector:
+    matchLabels:
+      app: catalog_api_walkthrough
+  template:
+    metadata:
+      labels:
+        app: catalog_api_walkthrough
+    spec:
+      containers:
+        - name: catalog-api-walkthrough
+          image: akrumsieg/catalog_api_walkthrough:v2
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
+          ports:
+            - containerPort: 80
+          env:
+            - name: MongoDbSettings__Host
+              value: mongodb-service
+            - name: MongoDbSettings__Password
+              valueFrom:
+                secretKeyRef:
+                  name: catalog-api-walkthrough-secrets
+                  key: mongodb-password
+          livenessProbe:
+            httpGet:
+              path: /health/live
+              port: 80
+          readinessProbe:
+            httpGet:
+              path: /health/ready
+              port: 80
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: catalog-api-walkthrough-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: catalog_api_walkthrough
+  ports:
+  - port: 80
+    targetPort: 80
